@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Final Project 2</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <button style="display: block;" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-7">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 btn-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button class="btn" onclick="LoginForm()"><a href="#login">Login</a></button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" onclick="SignUpForm()"><a href="#signup">Sign Up</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Form Sign Up-->
+    <div class="signup-form">
+      <i class="fa fa-window-close-o" aria-hidden="true" onclick="closeForm()"></i>
+      <br>
+      <h4 class="text-center">SIGN UP</h4> <br>
+      <form>
+        <div class="form-group">
+          <label>Username</label>
+          <br>
+          <input type="text" id="uname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <br>
+          <input type="text" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <br>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn" onclick="SignUp()">Sign Up</button>
+        </div>
+      </form>
+    </div>
+
+    <!--Form Login-->
+    <div class="login-form">
+      <i class="fa fa-window-close-o" aria-hidden="true" onclick="closeForm()"></i>
+      <h4 class="text-center">LOGIN</h4>
+      <form>
+        <div class="form-group">
+          <label>Username</label>
+          <br>
+          <input type="text" id="uname-login" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <br>
+          <input type="password" class="form-control" id="password-login">
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn" onclick="Login()">Login</button>
+        </div>
+      </form>
+    </div>
+
+
+    <!--BANNER-->
+    <div class="jumbotron">
+      <div class="row">
+
+        <div class="col-md-5 text-jumbo">
+          <h1 class="display-4">Bussiness Communications Reinvented</h1>
+          <p class="lead">Start communicating with your bussiness team more efficiently with our app</p>
+          <button class="btn">Get the app</button>
+        </div>
+
+        <div class="col-md-7 features-jumbotron">
+
+          <div class="doc d-flex justify-content-center">
+            <i class="fa fa-file-o fa-lg" aria-hidden="true"></i>
+          </div>
+
+          <div class="upload-1">
+            <div class="row">
+              <div class="col-md-2 icon">
+                <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>
+              </div>
+              <div class="col-md-9 text">
+                <span class="head">Uploading Document</span>
+                <p class="body">7,09/108,98 GB</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="upload-2">
+            <i class="fa fa-cloud-upload fa-lg d-flex justify-content-center" aria-hidden="true"></i>
+            <span class="body">1,73/2,09 GB</span>
+          </div>
+
+          <div class="meet">
+            <div class="row">
+              <div class="col-md-2 cal">
+                <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="col-md-10 text">
+                <span class="head">Team Meeting</span>
+                <p class="body">2:20 PM 15 Apr 2020</p>
+              </div>
+            </div>
+            <div class="more">
+              <span class="init-meet">JM</span>
+              <span class="init-meet">AC</span>
+              <span class="init-meet">KD</span>
+              <span class="init-meet">+8</span>
+            </div>
+          </div>
+
+          <div class="chat-1">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="initial d-flex justify-content-center">AB</i>
+              </div>
+              <div class="col-md-10 text">
+                <span class="head">Anna Brooks <span class="time">2:09 PM</span></span>
+                <p class="body">Hi, how are you doing today?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-2">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="initial">JS</i>
+              </div>
+              <div class="col-md-10 text">
+                <span class="head">John Smith <span class="time">11:02 AM</span></span>
+                <p class="body">Hello, are you available for a pro...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="saved">
+            <div class="row">
+              <div class="col-md-3">
+                <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="com-md-9 text">
+                <span class="head">Message Saved</span>
+                <p class="body">You have succesfully saved this message</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment d-flex justify-content-center">
+            <i class="fa fa-comment-o fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Features 1-->
+    <div class="features-1">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2 ">
+              <div class="cloud d-flex justify-content-center">
+                <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="col-md-10 features-text">
+              <span class="head">Cloud Base</span>
+              <p class="body">All your message is always backed up.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="lock d-flex justify-content-center">
+                <i class="fa fa-lock fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="col-md-10 features-text">
+              <span class="head">Secured</span>
+              <p class="body">All your message are secured very securely.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--PRODUCT 1-->
+    <div class="product-1">
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="product-chat">
+            <div class="product-chat-1">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-3">
+                  <div class="initial d-flex justify-content-center">
+                    <i>AJ</i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <span class="head">Andrew Johnson <span class="time">1:03 PM</span></span>
+                  <p class="body">I have seen that you availabl..</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-chat-2">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-3">
+                  <div class="initial d-flex justify-content-center">
+                    <i>DL</i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <span class="head">Daniel Luke <span class="time">5:27 PM</span></span>
+                  <p class="body">Would you like to have a meetin..</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-chat-3">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-3">
+                  <div class="initial  d-flex justify-content-center">
+                    <i>MC</i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <span class="head">Mark Clarke <span class="time">2:09 PM</span></span>
+                  <p class="body">This was such a busy week. I can..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6 desc">
+          <p class="display-4">Use our app to send message to your team</p>
+          <p class="lead">We offer really easy communications for all bussiness from small to large</p>
+          <button class="btn">Get the app</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Product 2-->
+    <div class="text-product-2">
+      <p class="display-4 text-center">Transform your communications</p>
+      <p class="lead text-center">Our mobile app is the only thing you need to change the
+        <br>
+        way you communicate with your team
+      </p>
+    </div>
+
+    <div class="product-2">
+      <div class="doc d-flex justify-content-center">
+        <i class="fa fa-file-o fa-lg" aria-hidden="true"></i>
+      </div>
+
+      <div class="chat-1">
+        <div class="row">
+          <div class="col-md-2">
+            <i class="initial d-flex justify-content-center">AB</i>
+          </div>
+          <div class="col-md-10 text">
+            <span class="head">Anna Brooks <span class="time">2:09 PM</span></span>
+            <p class="body">Hi, how are you doing today?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="saved">
+        <div class="row">
+          <div class="col-md-3">
+            <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="com-md-9 text">
+            <span class="head">Message Saved</span>
+            <p class="body">You have succesfully saved this message</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meet">
+        <div class="row">
+          <div class="col-md-4 cal">
+            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-8 text">
+            <span class="head">Team Meeting</span>
+            <p class="body">2:20 PM 15 Apr 2020</p>
+          </div>
+        </div>
+        <div class="more">
+          <span class="init-meet">JM</span>
+          <span class="init-meet">AC</span>
+          <span class="init-meet">KD</span>
+          <span class="init-meet">+8</span>
+        </div>
+      </div>
+
+      <div class="upload-1">
+        <div class="row">
+          <div class="col-md-2 icon">
+            <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-9 text">
+            <span class="head">Uploading Document</span>
+            <p class="body">7,09/108,98 GB</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-2">
+        <div class="row">
+          <div class="col-md-2">
+            <i class="initial d-flex justify-content-center">AB</i>
+          </div>
+          <div class="col-md-10 text">
+            <span class="head">Anna Brooks <span class="time">2:09 PM</span></span>
+            <p class="body">Hi, how are you doing today?</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--ABOUT-->
+    <div class="product-meet">
+      <div class="row">
+        <div class="col-md-6 desc">
+          <p class="display-4">Increase the efficiency within your company</p>
+          <p class="lead">Our app is the great way for you to start getting more tasks done.</p>
+          <button class="btn">Get the app</button>
+        </div>
+
+        <div class="col-md-6 calendar">
+          <div class="row meeting">
+            <div class="col-md-6 meet">
+              <div class="row">
+                <div class="col-md-3 cal">
+                  <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-9 text">
+                  <span class="head">Daily Standup</span>
+                  <p class="body">2:20 PM 15 Apr 2020</p>
+                </div>
+              </div>
+              <div class="more">
+                <span class="init-meet">KU</span>
+                <span class="init-meet">MG</span>
+                <span class="init-meet">AL</span>
+                <span class="init-meet">+29</span>
+              </div>
+            </div>
+            <div class="col-md-6 meet">
+              <div class="row">
+                <div class="col-md-3 cal">
+                  <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-9 text">
+                  <span class="head">Daily Ema</span>
+                  <p class="body">8:30 AM 28 April 2020</p>
+                </div>
+              </div>
+              <div class="more">
+                <span class="init-meet">MC</span>
+                <span class="init-meet">KY</span>
+                <span class="init-meet">KJ</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="row meeting">
+            <div class="col-md-6 meet">
+              <div class="row">
+                <div class="col-md-3 cal">
+                  <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-9 text">
+                  <span class="head">Marketing Call</span>
+                  <p class="body">4:45 PM 30 May 2020</p>
+                </div>
+              </div>
+              <div class="more">
+                <span class="init-meet">CO</span>
+                <span class="init-meet">VN</span>
+        
+              </div>
+            </div>
+            <div class="col-md-6 meet">
+              <div class="row">
+                <div class="col-md-3 cal">
+                  <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-9 text">
+                  <span class="head">Project Meeting</span>
+                  <p class="body">5:45 PM 1 Jun 2020</p>
+                </div>
+              </div>
+              <div class="more">
+                <span class="init-meet">TR</span>
+                <span class="init-meet">DE</span>
+                <span class="init-meet">PB</span>
+                <span class="init-meet">+2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row meeting">
+            <div class="col-md-6 meet">
+              <div class="row">
+                <div class="col-md-3 cal">
+                  <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-9 text">
+                  <span class="head">Presentation</span>
+                  <p class="body">10:15 AM 2 Jul 2020</p>
+                </div>
+              </div>
+              <div class="more">
+                <span class="init-meet">JM</span>
+                <span class="init-meet">AC</span>
+                <span class="init-meet">KD</span>
+                <span class="init-meet">+8</span>
+              </div>
+            </div>
+            <div class="col-md-6 meet">
+              <div class="row">
+                <div class="col-md-3 cal">
+                  <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-9 text">
+                  <span class="head">Sales Call</span>
+                  <p class="body">12:30 PM 15 Apr 2020</p>
+                </div>
+              </div>
+              <div class="more">
+                <span class="init-meet">JM</span>
+                <span class="init-meet">AC</span>
+                <span class="init-meet">KD</span>
+                <span class="init-meet">+8</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!--     <br> -->
+
+  <!--PRICING -->
+  <section id="pricing" class="container pricing mb-5">
+    <div class="row d-flex justify-content-center">
+      <div class="title-price">
+        <h1 style="font-size: 48px; color: #234CAD; position: relative; text-align: center; "><strong>Explore our simple
+            pricing </strong> </h1>
+        <p class="container-fluid" style="text-align: center; font-size: 16px;  color: #234CAD; width: 384px;  ">We
+          offer one of the most competitive prices on the market for everyone</p>
+        <div class="row gy-3 mt-5 pt-1">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="container px-5 card-price-side d-flex justify-content-center align-items-center">
+              <div class="row p-5">
+                <div class="col">
+                  <h5 class="text-center">Basic</h5>
+                  <h1 class="text-center pt-4">$9</h1>
+                  <p class="text-center pt-2">Per month</p>
+                  <button type="button" class="btn rounded-pill mt-3">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="container card-price-mid d-flex justify-content-center align-items-center">
+              <div class="row p-5">
+                <div class="col">
+                  <h5 class="text-center">Premium</h5>
+                  <h1 class="text-center pt-4">$29</h1>
+                  <p class="text-center pt-2">Per month</p>
+                  <button type="button" class="btn rounded-pill mt-3">
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="container px-5 card-price-side d-flex justify-content-center align-items-center">
+              <div class="row p-5">
+                <div class="col">
+                  <h5 class="text-center">Enterprise</h5>
+                  <h1 class="text-center pt-4">$129</h1>
+                  <p class="text-center pt-2">Per month</p>
+                  <button type="button" class="btn rounded-pill mt-3">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--CONTACT NEWSLETTER-->
+  <section id="contact" class="container-fluid">
+    <div class="container" style="background-color: #F2F6FF ; width: 1240px; height: 383px; border-radius: 60px; ">
+      <h1 style="font-size: 48px; color: #234CAD; position: relative; text-align: center; "><strong>Sign up to our
+          newsletter </strong> </h1>
+      <p class="container-fluid" style="text-align: center; font-size: 16px;  color: #234CAD; width: 384px;  ">Receive
+        latest news, updates, discounts and many other things every week.</p>
+      <br>
+      <div class="d-flex justify-content-center">
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <input type="email" class="form-control" id="input1" placeholder="Enter your email address">
+          <button id="button1"><img src="assets/Submit Button.png" alt="."></button>
+        </div>>
+      </div>
+
+    </div>
+  </section>
+  <br>
+
+  <!--FOOTER-->
+  <section id="footer" style="padding-left: 50px;">
+    <div class="container text-center" style="color:#234CAD; padding-left: 70px;">
+      <div class="row" style="padding: 50px;">
+        <div class="col">
+          <h4 style="font: size 30px; text-align: left;"><strong>StartUp.io</strong></h4>
+          <p style="font-size: 18px;text-align: left;">© 2020 - All rights reserved</p>
+
+        </div>
+        <div class="col">
+          <h4 style="font: size 30px; text-align: left;;"><strong>Product</strong></h4>
+          <p style="font-size: 18px;text-align: left;">Benefit</p>
+          <p style="font-size: 18px;text-align: left;">Feedback</p>
+          <p style="font-size: 18px;text-align: left;">Features</p>
+        </div>
+        <div class="col">
+          <h4 style="font: size 30px; text-align: left;"><strong>About</strong></h4>
+          <p style="font-size: 18px;text-align: left;">Company</p>
+          <p style="font-size: 18px;text-align: left;">Team</p>
+        </div>
+        <div class="col">
+          <h4 style="font: size 30px; text-align: left;"><strong>Support</strong></h4>
+          <p style="font-size: 18px;text-align: left;">Get help</p>
+          <p style="font-size: 18px;text-align: left;">Terms of service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

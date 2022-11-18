@@ -1,0 +1,1024 @@
+html, body {
+width: 100%;
+height: 100%;
+font-family: 'Nunito', sans-serif;
+background-color: #ffffff;
+color: #234cad;
+}
+
+nav {
+background-color: #ffffff;
+}
+
+nav i {
+background-color: #f2f6ff;
+border: 1px solid #f2f6ff;
+padding: 10px;
+border-radius: 30px;
+color: #234cad;
+cursor: pointer;
+}
+
+nav ul {
+justify-content: center;
+}
+
+nav li {
+margin-right: 20px;
+}
+
+nav li a{
+color: #234cad !important;
+cursor: pointer;
+}
+
+.btn-nav button {
+background-color: #f2f6ff;
+border-radius: 20px;
+width: 120px;
+margin-bottom: 5px;
+}
+
+/*Login*/
+
+.login-form {
+width: 25%;
+background: white;
+position: absolute;
+left: 50%;
+top: 0;
+transform: translate(-50%, -50%) scale(0.1);
+justify-content: center;
+padding: 10px 30px 30px 30px;
+color: #234cad;
+border-radius: 6px;
+visibility: hidden;
+transition: transform 0.5s, top 0.5s;
+z-index: 1;
+margin-top: 20px;
+height: 47%;
+border: 2px solid #234cad;
+}
+
+.login-form input {
+width: 100%;
+}
+
+.login-form button {
+border: none;
+outline: none;
+cursor: pointer;
+border-radius: 4px;
+margin: 10px 0 5px 6px;
+font-weight: bolder;
+background-color: #234cad;
+color: #f2f6ff;
+width: 120px;
+height: 50px;
+font-size: 16px;
+}
+
+.showLogin {
+top: 50%;
+visibility: visible;
+transform: translate(-50%, -50%);
+z-index: 2;
+}
+
+.login-form h4, .signup-form h4 {
+font-weight: bold;
+}
+
+.login-form label, .signup-form label {
+font-size: 20px;
+}
+
+/*Sign Up*/
+
+.signup-form {
+width: 30%;
+background: white;
+position: absolute;
+left: 50%;
+top: 0;
+transform: translate(-50%, -50%) scale(0.1);
+justify-content: center;
+padding: 10px 30px 30px 30px !important;
+color: #234cad;
+border-radius: 6px;
+visibility: hidden;
+transition: transform 0.5s, top 0.5s;
+z-index: 1;
+margin-top: 10px;
+height: 62%;
+border: 2px solid #234cad;
+}
+
+.signup-form input {
+width: 100%;
+}
+
+.signup-form button {
+border: none;
+outline: none;
+cursor: pointer;
+border-radius: 4px;
+margin: 10px 0 5px 6px;
+font-weight: bolder;
+background-color: #234cad;
+color: #f2f6ff;
+width: 120px;
+height: 50px;
+font-size: 16px;
+}
+
+.showSignUp {
+top: 50%;
+visibility: visible;
+transform: translate(-50%, -50%);
+z-index: 2;
+}
+
+
+/*Banner*/
+
+.jumbotron {
+    background-color: #f2f6ff !important;
+    border-radius: 60px !important;
+    color: #234cad;
+    margin-top: 50px;
+}
+
+.jumbotron .display-4, .product-1 .display-4, .text-product-2 .display-4, .product-meet .display-4 {
+    font-weight: bold;
+    margin-top: 20%;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+.jumbotron .lead, .product-1 .lead, .text-product-2 .lead, .product-meet .lead {
+    font-size: 16px;
+}
+
+.jumbotron button, .product-1 button, .product-meet button {
+    background-color: #f2f6ff;
+    border-radius: 35px;
+    border: 2px solid #234cad;
+    width: 180px;
+    height: 50px;
+    color: #234cad;
+    margin-top: 20px;
+    font-weight: 700px;
+    font-size: 22px;
+}
+
+.doc {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px 10px 0 10px;
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+    margin-top: 5%;
+}
+
+.doc i {
+    margin-top: 20%;
+    color: #234cad;
+}
+
+.head {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.body {
+    font-size: 12px;
+}
+
+.upload-1 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    width: 56%;
+    height: 80px;
+    margin: 20px 0 10px 0;
+}
+
+.upload-1 .text {
+    position: absolute;
+    left: 17%;
+}
+
+.upload-1 .icon {
+    margin-left: 10px !important;
+}
+
+.upload-1 i {
+    color: #234cad;
+    border: 2px solid;
+    border-color: #234cad !important;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 17px 0 0 16px;
+    margin: auto;
+    width: 58px;
+    height: 54px;
+}
+
+.upload-2 {
+    border: 1px solid #f2f6ff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px 5px 5px 5px;
+    width: 120px;
+    height: 150px;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    top: 2%;
+    left: 60%;
+}
+
+.upload-2 i {
+    color: #234cad;
+    border: 2px solid;
+    border-color: #234cad !important;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 20px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.upload-2 .body {
+    margin-top: 20%;
+    display: block;
+    text-align: center;
+}
+
+.meet {
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 48%;
+    height: 20%;
+    margin: 20px 0 10px 0;
+}
+
+.meet .row {
+    height:50%;
+}
+
+.meet .cal {
+    color: #234cad;
+    border: 2px solid;
+    border-color: #234cad !important;
+    border-radius: 50%;
+    background-color: #f2f6ff;
+    position: absolute !important;
+    margin-top: 8px;
+    width: 70px;
+    height: 70px;
+    left: 4%;
+}
+
+.calender .meet .more {
+    margin: 25px 10px;
+    padding-bottom: 20px;
+}
+
+.meet i {
+   padding-top: 22.5%;
+   position: absolute;
+   margin-left: 3px;
+}
+
+.meet .text {
+    position: absolute;
+    left: 18%;
+    margin-top: 3%;
+}
+
+.meet .more {
+    margin: 25px 10px;
+    padding-bottom: 200px;
+}
+
+.meet .init-meet {
+    border: 1px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff;
+    font-size: 10px;
+}
+
+.chat-1 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 50%;
+    height: 78px;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    top: 33.6%;
+    left: 50%;
+}
+
+.time {
+    font-weight: lighter;
+    text-align: end;
+    font-size: 10px;
+}
+
+.chat-1 i {
+    color: #234cad;
+    border: 2px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 10px 10px 0 9px;
+    width: 50px;
+    height: 50px;
+}
+
+.chat-1 .text {
+    left: 25%;
+    position: absolute;
+    margin-top: 2%;
+}
+
+.chat-2 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 56%;
+    height: 80px;
+    margin: 20px 0 10px 0;
+}
+
+.chat-2 i {
+    color: #234cad;
+    border: 2px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 10px 10px 0 16px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.chat-2 .text {
+    position: absolute;
+    left: 14%;
+}
+
+.saved {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 320px;
+    height: 90px;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+}
+
+.saved i {
+    color: #234cad;
+    border: 2px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 12px 10px 0 17px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.saved .text {
+    margin-top: 5px;
+    left: 26%;
+    position: absolute;
+}
+
+.comment {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 78%;
+    left: 52%;
+}
+
+.comment i {
+    margin-top: 20%;
+    color: #234cad;
+}
+
+/* features-1 */
+
+.container .features-1 {
+background-color: #ffffff !important;
+}
+
+.features-1 {
+color: #234cad;
+height: 50%;
+padding: 50px 0 50px;
+}
+
+.features-1 .cloud, .features-1 .lock {
+border-radius: 50%;
+background-color: #f2f6ff;
+width: 80px;
+height: 70px;
+margin-left: 10px;
+}
+
+.features-1 i {
+margin: auto;
+color: #234cad;
+}
+
+.features-1 .head {
+font-size: 24px;
+}
+
+.features-1 .body {
+font-size: 18px;
+}
+
+
+/* product 1 */
+
+.product-1, .product-meet {
+color: #234cad;
+margin-bottom: 30px;
+}
+
+
+
+.product-chat {
+background-color: #f2f6ff !important;
+border: 1px solid #f2f6ff;
+border-radius: 60px !important;
+color: #234cad;
+height: 500px;
+}
+
+
+.calender {
+background-color: #f2f6ff !important;
+border: 1px solid #f2f6ff;
+border-radius: 60px !important;
+color: #234cad;
+height: 520px;
+margin: auto;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 100px;
+overflow: hidden;
+}
+
+.product-1 .desc, .product-meet .desc {
+background-color: #ffffff;
+padding-left: 80px;
+}
+
+
+.product-chat-1, .product-chat-2, .product-chat-3 {
+margin: 30px 80px 30px;
+height: 100px;
+border: #ffffff 1px solid;
+border-radius: 20px;
+background-color: #ffffff;
+padding: 20px 0 0 0 !important;
+position: relative;
+}
+
+.product-chat-1 {
+margin-top: 50px;
+width: 70%;
+}
+
+.product-chat-1 i {
+font-size: 18px;
+}
+
+.product-chat-2 {
+opacity: 0.8;
+margin-left: 110px;
+width: 300px;
+}
+
+.product-chat-2 .head {
+font-size: 14px;
+font-weight: bold;
+}
+
+.product-chat-2 .body {
+font-size: 10px;
+}
+
+.product-chat-2 i {
+font-size: 16px;
+}
+
+.product-chat-2 .time {
+font-size: 8px;
+}
+
+.product-chat-3 {
+opacity: 0.6;
+margin-left: 130px;
+width: 250px;
+}
+
+.product-chat-3 .head {
+font-size: 12px;
+font-weight: bold;
+}
+
+.product-chat-3 .body {
+font-size: 8px;
+}
+
+.product-chat-3 i {
+font-size: 14px;
+}
+
+.product-chat-3 .time {
+font-size: 6px;
+}
+
+.initial {
+border-radius: 50%;
+background-color: #f2f6ff;
+width: 50px;
+height: 50px;
+margin-left: 10px;
+}
+
+.product-chat i {
+margin: auto;
+color: #234cad;
+}
+
+/* product-2 */
+
+.text-product-2 {
+    color: #234cad;
+    padding-bottom: 7%;
+}
+
+/* Product 2 */
+body, html {
+    color: #234cad;
+}
+
+.head {
+    font-size: 16px;
+    font-weight: bold;
+    color: #234cad;
+}
+
+.body {
+    font-size: 12px;
+}
+
+.time {
+    font-weight: lighter;
+    text-align: end;
+    font-size: 10px;
+}
+
+.product-2 {
+    background-color: #f2f6ff !important;
+    border-radius: 60px !important;
+    color: #234cad;
+    margin-top: 50px;
+    height: 480px !important;
+    margin-bottom: 50px;
+}
+
+.product-2 .doc {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px 10px 0 10px;
+    width: 60px;
+    height: 60px;
+    left: 42%;
+    margin-top: 3%;
+    position: absolute;
+}
+
+.product-2 .doc i {
+    margin-top: 20%;
+    color: #234cad;
+}
+
+.product-2 .chat-1 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 25%;
+    height: 78px;
+    margin: 10px 0 10px 0;
+    position: relative;
+    left: 50%;
+    top: 5%;
+}
+
+.product-2 .chat-1 i {
+    color: #234cad;
+    border: 2px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.product-2 .chat-1 .text {
+    left: 23%;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.product-2 .meet {
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 22%;
+    margin: 20px 0 10px 0;
+    left: 40%;
+    bottom: 16%;
+    position: relative;
+    height: 24%;
+}
+
+.product-2 .meet .cal {
+    color: #234cad;
+    border: 2px solid;
+    border-color: #234cad !important;
+    border-radius: 50%;
+    background-color: #f2f6ff;
+    margin-top: 8px;
+    width: 70px;
+    height: 70px;
+    left: 4%;
+    position: absolute;
+}
+
+.product-2 .meet i {
+   padding-top: 22.5%;
+   position: absolute;
+   margin-left: 3px;
+}
+
+.product-2 .meet .text {
+    position: absolute;
+    left: 32%;
+    margin-top: 5%;
+}
+
+.product-2 .meet .more {
+    margin: 80px 10px;
+}
+
+.product-2 .meet .init-meet {
+    border: 1px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff;
+    font-size: 10px;
+}
+
+
+.product-2 .upload-1 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    width: 25%;
+    height: 80px;
+    margin: 20px 0 10px 0;
+    position: relative;
+    left: 64%;
+    bottom: 44%;
+}
+
+.product-2 .upload-1 .text {
+    position: absolute;
+    left: 24%;
+}
+
+.product-2 .upload-1 .icon {
+    margin-left: 10px !important;
+}
+
+.product-2 .upload-1 i {
+    color: #234cad;
+    border: 2px solid;
+    border-color: #234cad !important;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 17px 0 0 16px;
+    margin: auto;
+    width: 58px;
+    height: 54px;
+}
+
+.product-2 .saved {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 320px;
+    height: 90px;
+    margin: 10px 0 10px 0;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+
+.product-2 .saved i {
+    color: #234cad;
+    border: 2px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 12px 10px 0 17px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.product-2 .saved .text {
+    margin-top: 5px;
+    left: 26%;
+    position: absolute;
+}
+
+.product-2 .chat-2 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 25%;
+    height: 80px;
+    position: relative;
+    left: 40%;
+    bottom: 35%;
+}
+
+.product-2 .chat-2 i {
+    color: #234cad;
+    border: 2px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff ;
+    padding: 10px 10px 0 16px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.product-2 .chat-2 .text {
+    position: absolute;
+    left: 20%;
+}
+
+/* baru */
+.btn {
+margin: 0px 20px;
+padding: 11px 29px;
+}
+.btn-outline-primary {
+border-radius: 25px;
+border: 2px solid #234CAD;
+color: #234CAD;
+}
+.btn-light {
+border-radius: 25px;
+color: #234CAD;
+background: #F2F6FF;
+}
+.text {
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #234CAD;
+}
+#button1{
+
+position: absolute;
+left: 89%;
+right: 2%;
+top: 15.38%;
+bottom: 15.38%;
+border-radius: 12.5px;
+border: 0px;
+
+}
+.jarakBut {
+margin-left: 11%;
+margin-top: 3%;
+}
+.sizefontUse {
+font-size: 50px;
+}
+.sizefontWe {
+font-size: 18px;
+margin-top: 5%;
+}
+.lingback {
+background-color: #F2F6FF;
+height: 40px;
+width: 40px;
+}
+.textLing {
+font-size: 15px;
+text-align: center;
+color: #234CAD;
+}
+#form h1 {
+color: #0f2027;
+text-align: center;
+}
+.textBoxIncrease {
+margin-top: 13%;
+margin-left: 10%;
+height: 25%;
+width: 90%;
+}
+.textBoxOur {
+margin-left: 16%;
+height: 10%;
+width: 55%;
+}
+.boxButGet2 {
+margin-left: 9%;
+height: 10%;
+width: 55%;
+}
+.textRataKiri{
+text-align: left;
+}
+.ukurImg {
+height: 20px;
+text-align: center;
+}
+.boxCal {
+height: 30%;
+width: 90%;
+}
+
+
+
+
+/* ABOUT */
+.textPF1 {
+text-align: left;
+margin-left: 15%;
+font-family: 'Nunito', sans-serif;
+color: #234CAD;
+}
+
+.product-meet {
+  height: 600px;
+}
+
+.calendar {
+  border-radius: 10px;
+  background-color: #f2f6ff;
+  height: 500px;
+}
+
+.calendar .meet {
+  height: 130px;
+  width: 90px;
+}
+
+.calendar .meeting {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+
+.calendar .meet .cal {
+    color: #234cad;
+    border: 2px solid;
+    border-color: #234cad !important;
+    border-radius: 50%;
+    background-color: #f2f6ff;
+    margin-top: 8px;
+    width: 90px;
+    height: 70px;
+    left: 4%;
+    position: absolute;
+}
+
+.calendar .meet i {
+   padding-top: 15px;
+   position: absolute;
+   margin-left: 3px;
+}
+
+.calendar .meet .text {
+    position: absolute;
+    left: 32%;
+    margin-top: 5%;
+}
+
+.calendar.meeting .more {
+    margin-left: 5px;
+}
+
+.calendar .meeting .init-meet {
+    border: 1px solid #f2f6ff;
+    border-radius: 50%;
+    background-color: #f2f6ff;
+    font-size: 10px;
+}
+
+/* PRISING */
+.pricing {
+margin-top: 150px;
+}
+
+.pricing .title-price h1 {
+font-size: 48px;
+font-weight: 700;
+color: #234CAD;
+}
+
+.pricing .desc-price {
+width: 35%;
+font-size: 16px;
+font-weight: 400;
+color: #234CAD;
+}
+
+.pricing .card-price-side {
+border-radius: 4rem;
+background-color: #F2F6FF;
+}
+
+.pricing .card-price-mid {
+border-radius: 4rem;
+border: 3px #234CAD solid;
+}
+
+.pricing h5 {
+font-size: 25px;
+font-weight: 400;
+color: #234CAD;
+}
+
+.pricing h1 {
+font-size: 56px;
+font-weight: 700;
+color: #234CAD;
+}
+
+.pricing p{
+color:#234CAD;
+}
+
+.pricing .card-price-side button {
+background-color: white;
+border-radius: 4rem;
+width: 165px;
+height: 55px;
+color: #234CAD;
+font-weight: 700;
+font-size: 18px;
+}
+
+.pricing .card-price-mid button {
+background-color: white;
+border: 3px #234CAD solid;
+border-radius: 4rem;
+width: 165px;
+height: 55px;
+color: #234CAD;
+font-weight: 700;
+font-size: 18px;
+}
+
+.pricing button:hover {
+background: #234CAD !important;
+border-radius: 4rem;
+color: #ffffff;
+}
+
+
+/* email */
+#input1{
+width: 500px;
+height: 65px;
+border-radius: 17.5px;
+}
+.position-relative{
+/* padding-left: 400px; */
+
+}
+
+/* Footer */
+.backChat{
+
+}
